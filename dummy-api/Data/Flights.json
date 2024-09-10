@@ -1,0 +1,139 @@
+{
+  "results": [
+    {
+      "flight_id": "F12345",
+      "origin": {
+        "airport_code": "JFK",
+        "airport_name": "John F. Kennedy International Airport",
+        "city": "New York",
+        "country": "United States",
+        "departure_time": "2024-09-15T08:00:00-04:00"
+      },
+      "destination": {
+        "airport_code": "LGA",
+        "airport_name": "LaGuardia Airport",
+        "city": "New York",
+        "country": "United States",
+        "arrival_time": "2024-09-15T09:00:00-04:00"
+      },
+      "duration": "1h",
+      "carrier": {
+        "name": "Delta Airlines",
+        "flight_number": "DL452"
+      },
+      "price": {
+        "currency": "USD",
+        "amount": 120.50
+      }
+    },
+    {
+      "flight_id": "F12346",
+      "origin": {
+        "airport_code": "JFK",
+        "airport_name": "John F. Kennedy International Airport",
+        "city": "New York",
+        "country": "United States",
+        "departure_time": "2024-09-15T10:00:00-04:00"
+      },
+      "destination": {
+        "airport_code": "EWR",
+        "airport_name": "Newark Liberty International Airport",
+        "city": "Newark",
+        "country": "United States",
+        "arrival_time": "2024-09-15T11:30:00-04:00"
+      },
+      "duration": "1h 30m",
+      "carrier": {
+        "name": "American Airlines",
+        "flight_number": "AA789"
+      },
+      "price": {
+        "currency": "USD",
+        "amount": 145.00
+      }
+    },
+    {
+      "flight_id": "F12347",
+      "origin": {
+        "airport_code": "LGA",
+        "airport_name": "LaGuardia Airport",
+        "city": "New York",
+        "country": "United States",
+        "departure_time": "2024-09-15T14:00:00-04:00"
+      },
+      "destination": {
+        "airport_code": "JFK",
+        "airport_name": "John F. Kennedy International Airport",
+        "city": "New York",
+        "country": "United States",
+        "arrival_time": "2024-09-15T15:00:00-04:00"
+      },
+      "duration": "1h",
+      "carrier": {
+        "name": "JetBlue",
+        "flight_number": "B6423"
+      },
+      "price": {
+        "currency": "USD",
+        "amount": 105.75
+      }
+    },
+    {
+      "flight_id": "F12348",
+      "origin": {
+        "airport_code": "EWR",
+        "airport_name": "Newark Liberty International Airport",
+        "city": "Newark",
+        "country": "United States",
+        "departure_time": "2024-09-16T07:30:00-04:00"
+      },
+      "destination": {
+        "airport_code": "LGA",
+        "airport_name": "LaGuardia Airport",
+        "city": "New York",
+        "country": "United States",
+        "arrival_time": "2024-09-16T08:45:00-04:00"
+      },
+      "duration": "1h 15m",
+      "carrier": {
+        "name": "United Airlines",
+        "flight_number": "UA202"
+      },
+      "price": {
+        "currency": "USD",
+        "amount": 132.25
+      }
+    },
+    {
+      "flight_id": "F12349",
+      "origin": {
+        "airport_code": "EWR",
+        "airport_name": "Newark Liberty International Airport",
+        "city": "Newark",
+        "country": "United States",
+        "departure_time": "2024-09-17T13:45:00-04:00"
+      },
+      "destination": {
+        "airport_code": "JFK",
+        "airport_name": "John F. Kennedy International Airport",
+        "city": "New York",
+        "country": "United States",
+        "arrival_time": "2024-09-17T15:00:00-04:00"
+      },
+      "duration": "1h 15m",
+      "carrier": {
+        "name": "Spirit Airlines",
+        "flight_number": "NK567"
+      },
+      "price": {
+        "currency": "USD",
+        "amount": 95.50
+      }
+    }
+  ],
+  "pagination": {
+    "current_page": 1,
+    "total_pages": 1,
+    "total_results": 5
+  }
+}

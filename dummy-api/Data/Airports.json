@@ -1,0 +1,238 @@
+{
+  "results": [
+    {
+      "airport_id": "JFK",
+      "name": "John F. Kennedy International Airport",
+      "city": {
+        "name": "New York",
+        "city_id": "NYC"
+      },
+      "country": {
+        "name": "United States",
+        "country_id": "US"
+      },
+      "location": {
+        "lat": 40.6413111,
+        "lon": -73.7781391
+      },
+      "iata_code": "JFK",
+      "timezone": "America/New_York"
+    },
+    {
+      "airport_id": "SLC",
+      "name": "Salt Lake City International Airport",
+      "city": {
+        "name": "Salt Lake City",
+        "city_id": "SLC"
+      },
+      "country": {
+        "name": "United States",
+        "country_id": "US"
+      },
+      "location": {
+        "lat": 40.7899405,
+        "lon": -111.9790662
+      },
+      "iata_code": "SLC",
+      "timezone": "America/Denver"
+    },
+    {
+      "airport_id": "PHX",
+      "name": "Phoenix Sky Harbor International Airport",
+      "city": {
+        "name": "Phoenix",
+        "city_id": "PHX"
+      },
+      "country": {
+        "name": "United States",
+        "country_id": "US"
+      },
+      "location": {
+        "lat": 33.4372692,
+        "lon": -112.007789
+      },
+      "iata_code": "PHX",
+      "timezone": "America/Phoenix"
+    },
+    {
+      "airport_id": "LAX",
+      "name": "Los Angeles International Airport",
+      "city": {
+        "name": "Los Angeles",
+        "city_id": "LAX"
+      },
+      "country": {
+        "name": "United States",
+        "country_id": "US"
+      },
+      "location": {
+        "lat": 33.9415889,
+        "lon": -118.40853
+      },
+      "iata_code": "LAX",
+      "timezone": "America/Los_Angeles"
+    },
+    {
+      "airport_id": "ABQ",
+      "name": "Albuquerque International Sunport",
+      "city": {
+        "name": "Albuquerque",
+        "city_id": "ABQ"
+      },
+      "country": {
+        "name": "United States",
+        "country_id": "US"
+      },
+      "location": {
+        "lat": 35.0496256,
+        "lon": -106.617195
+      },
+      "iata_code": "ABQ",
+      "timezone": "America/Denver"
+    },
+    {
+      "airport_id": "ORD",
+      "name": "O'Hare International Airport",
+      "city": {
+        "name": "Chicago",
+        "city_id": "ORD"
+      },
+      "country": {
+        "name": "United States",
+        "country_id": "US"
+      },
+      "location": {
+        "lat": 41.9741625,
+        "lon": -87.9073214
+      },
+      "iata_code": "ORD",
+      "timezone": "America/Chicago"
+    },
+    {
+      "airport_id": "LAS",
+      "name": "McCarran International Airport",
+      "city": {
+        "name": "Las Vegas",
+        "city_id": "LAS"
+      },
+      "country": {
+        "name": "United States",
+        "country_id": "US"
+      },
+      "location": {
+        "lat": 36.084,
+        "lon": -115.1537
+      },
+      "iata_code": "LAS",
+      "timezone": "America/Los_Angeles"
+    },
+    {
+      "airport_id": "OGG",
+      "name": "Kahului Airport",
+      "city": {
+        "name": "Maui",
+        "city_id": "OGG"
+      },
+      "country": {
+        "name": "United States",
+        "country_id": "US"
+      },
+      "location": {
+        "lat": 20.89865,
+        "lon": -156.430457
+      },
+      "iata_code": "OGG",
+      "timezone": "Pacific/Honolulu"
+    },
+    {
+      "airport_id": "MCO",
+      "name": "Orlando International Airport",
+      "city": {
+        "name": "Orlando",
+        "city_id": "MCO"
+      },
+      "country": {
+        "name": "United States",
+        "country_id": "US"
+      },
+      "location": {
+        "lat": 28.4311577,
+        "lon": -81.308083
+      },
+      "iata_code": "MCO",
+      "timezone": "America/New_York"
+    },
+    {
+      "airport_id": "BZE",
+      "name": "Philip S. W. Goldson International Airport",
+      "city": {
+        "name": "Belize City",
+        "city_id": "BZE"
+      },
+      "country": {
+        "name": "Belize",
+        "country_id": "BZ"
+      },
+      "location": {
+        "lat": 17.5392,
+        "lon": -88.308
+      },
+      "iata_code": "BZE",
+      "timezone": "America/Belize"
+    },
+    {
+      "airport_id": "LHR",
+      "name": "Heathrow Airport",
+      "city": {
+        "name": "London",
+        "city_id": "LHR"
+      },
+      "country": {
+        "name": "United Kingdom",
+        "country_id": "GB"
+      },
+      "location": {
+        "lat": 51.4700223,
+        "lon": -0.4542955
+      },
+      "iata_code": "LHR",
+      "timezone": "Europe/London"
+    },
+    {
+      "airport_id": "HND",
+      "name": "Tokyo Haneda Airport",
+      "city": {
+        "name": "Tokyo",
+        "city_id": "HND"
+      },
+      "country": {
+        "name": "Japan",
+        "country_id": "JP"
+      },
+      "location": {
+        "lat": 35.5493932,
+        "lon": 139.7798386
+      },
+      "iata_code": "HND",
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "airport_id": "ATL",
+      "name": "Hartsfield-Jackson Atlanta International Airport",
+      "city": {
+        "name": "Atlanta",
+        "city_id": "ATL"
+      },
+      "country": {
+        "name": "United States",
+        "country_id": "US"
+      },
+      "location": {
+        "lat": 33.640411,
+        "lon": -84.419853
+      },
+      "iata_code": "ATL",
+      "timezone": "America/New_York"
+    }
+  ]
+}
