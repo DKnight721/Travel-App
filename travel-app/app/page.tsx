@@ -1,7 +1,10 @@
 "use client"
 import SearchBar from "@/app/components/SearchBar";
 import FlightSearchResults from "@/app/components/FlightSearchResults";
-import { useState} from "react";
+import React, { useState} from "react";
+import FlightSearch from "@/app/components/FlightSearch";
+import ThingsToDo from "@/app/components/ThingsToDo";
+import Link from 'next/link'
 
 interface FlightData {
     flight_id: string;
@@ -27,7 +30,7 @@ export default function Home() {
 
     const handleSearch = async (query: string) => {
         try {
-            const response = await fetch(`http://localhost:8000/api/flights?query=${query}`);
+            const response = await fetch(`http://localhost:8000/api/flights?${query}`);
             const data = await response.json();
             setFlights(data.results); // Assuming `results` is an array of flights
         } catch (error) {
@@ -39,15 +42,16 @@ export default function Home() {
         <div className="bg-white grid grid-cols-[1fr,2fr,1fr] gap-4  border-4 text-black">
             <div >
                 <div className="text-center">
-                    <h1>Blogs</h1>
                 </div>dd
-                <div>01</div>
+                <div>
+                    <Link href={"/Itinerary"}>Itinerary</Link>
+                </div>
                 <div>02</div>
             </div>
             <div className="p-4">
                 <div className="text-center">
                     <h1>Search Flights</h1>
-                    <SearchBar onSearch={handleSearch} />
+                    <FlightSearch onSearch={handleSearch} />
                 </div>
                 <div className="text-center ">
                     <FlightSearchResults flights={flights} />
@@ -55,7 +59,8 @@ export default function Home() {
             </div>
             <div >
                 <div className="text-center">
-                    Things to do
+                    <ThingsToDo/>
+                    <div className="gcse-search"></div>
                 </div>
             </div>
         </div>

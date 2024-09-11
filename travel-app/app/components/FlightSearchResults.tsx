@@ -1,3 +1,4 @@
+
 interface FlightData {
     flight_id: string;
     origin: {
