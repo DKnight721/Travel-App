@@ -57,34 +57,37 @@ const Itinerary: React.FC = () => {
 
         for (let d = start; d <= end; d.setDate(d.getDate() + 1)) {
             const currentDate = new Date(d);
-            const formattedDate = currentDate.toISOString().split('T')[0];
+            const formattedDate = currentDate.toLocaleDateString('en-US', { month: 'numeric', day: 'numeric' });
             const weekdayName = currentDate.toLocaleDateString('en-US', { weekday: 'long' });
             dates.push({ date: formattedDate, weekday: weekdayName });
         }
 
         return (
             <div>
-                {dates.map(({ date, weekday }) => {
-                    const currentItems = items.find(item => item.date === date)?.items || [];
-                    return (
-                        <div key={date} className="relative mb-4">
-                            <h3 className="text-lg font-bold">{weekday} {date}</h3>
-                            <ul className="list-disc pl-5">
-                                {currentItems.map((item, idx) => (
-                                    <li key={idx}>{item}</li>
-                                ))}
-                            </ul>
-                            <button
-                                onClick={() => handleAddItemClick(date)}
-                                className="absolute top-0 right-0 mt-2 mr-2 py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-                            >
-                                Add Itinerary
-                            </button>
+                {dates.map(({ date, weekday }) => (
+                    <div key={date} className="relative mb-4 flex items-center group p-4 bg-white rounded-lg shadow-md">
+                        <div className="flex-grow">
+                            <h3 className="text-lg font-bold">
+                                <span className="text-gray-700">{weekday}, </span>
+                                <span className="text-gray-900">{date}</span>
+                            </h3>
                         </div>
-                    );
-                })}
+                        <button
+                            onClick={() => handleAddItemClick(date)}
+                            className="absolute right-0 top-1/2 transform -translate-x-full translate-y-[-50%] py-2 px-4 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-transform duration-300 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-x-0"
+                        >
+                            Add Itinerary
+                        </button>
+                        <ul className="list-disc pl-5 mt-2 text-gray-800">
+                            {(items.find(i => i.date === date)?.items || []).map((item, idx) => (
+                                <li key={idx}>{item}</li>
+                            ))}
+                        </ul>
+                    </div>
+                ))}
             </div>
         );
+
     };
 
     return (
@@ -103,7 +106,7 @@ const Itinerary: React.FC = () => {
 
             {/* Right Column: Itinerary Items */}
             <div className="col-span-2 p-4 border-2 border-gray-300 rounded-lg shadow-md bg-gray-50">
-                {/* This column is now empty, as the items are shown in the left column */}
+
             </div>
 
             <DateRangeModal
