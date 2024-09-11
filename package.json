@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@headlessui/react": "^2.1.6",
-    "@heroicons/react": "^2.1.5"
+    "@heroicons/react": "^2.1.5",
+    "@radix-ui/themes": "^3.1.3"
   }
 }

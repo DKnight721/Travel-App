@@ -11,7 +11,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ placeholder = "Where do you want 
 
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        onSearch(query);
+        onSearch(query); // Call the parent function with the query
     };
 
     return (
